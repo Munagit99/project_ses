@@ -85,11 +85,9 @@ DATABASES = {
         'NAME': 'student_enquiry_system',
         'HOST': 'localhost',
         'USESR': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'yes',
         'PORT': '3306',
-    }
-
-    
+    }}
 
 
 # Password validation

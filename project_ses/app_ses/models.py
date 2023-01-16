@@ -5,15 +5,15 @@ class AppUser(models.Model) :
     full_name = models.CharField(max_length=200)
     contact = models.CharField(max_length=200)
     email = models.EmailField(unique=True)
-    usertype = models.CharField(max_lenggth=200)
-    password = models,CharField(max_length50)
+    usertype = models.CharField(max_length=200)
+    password = models.CharField(max_length=50)
 
     class Meta:
         db_table = "app_users"
 
 class Course(models.Model):
     title = models.CharField(max_length=200)
-    code = models.CharField(mac_length=20)
+    code = models.CharField(max_length=20)
 
     class Meta:
         db_table = "app_courses"
@@ -25,7 +25,7 @@ class Student(models.Model):
     email = models.EmailField(unique=True)
     contact = models.CharField(max_length=100)
     gender = models.CharField(max_length=100)
-    blood_group = models.Charfield(max_length=100)
+    blood_group = models.CharField(max_length=100)
     academic_level = models.CharField(max_length=200)
     academic_status = models.CharField(max_length=100)
     academic_org = models.CharField(max_length=200)
@@ -34,7 +34,7 @@ class Student(models.Model):
     intake = models.CharField(max_length=200, null=True, blank=True)
     shift = models.CharField(max_length=100, null=True, blank=True)
     remarks = models.CharField(max_length=200)
-    visited_at = models.DateTimeField(defult=datetime.now())
+    visited_at = models.DateTimeField(default=datetime.now())
 
     class Meta:
         db_table = "app_students"
